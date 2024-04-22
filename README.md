@@ -1,4 +1,3 @@
-
 # MediaWiki Helm Chart for Thoughtworks assignement
 
 This Helm chart simplifies the deployment of MediaWiki on Kubernetes.
@@ -42,6 +41,7 @@ Upon configuration completion, download the `LocalSettings.php` file. Place this
 
 
 
-Additional Notes
-I Would have EnsureD proper security measures FOR SECRETS Such as DB passwd and all using some External provider using secret CSI driver but due to time constain keeping it simple.
 
+## Additional Notes
+
+I Would have EnsureD proper security measures FOR SECRETS Such as DB passwd and all using some External provider using secret CSI driver but due to time constain keeping it simple.
