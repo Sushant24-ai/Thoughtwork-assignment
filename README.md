@@ -39,3 +39,9 @@ After deployment, access the application via the external IP provided by the loa
 The database host will be available at `database:3306`. Configure the database root password, username, and database name from the `values.yaml` file located inside `mediawiki-mariadb-chart`. Use these details to configure the MediaWiki database settings page.
 
 Upon configuration completion, download the `LocalSettings.php` file. Place this file inside the container at `/var/www/html`. You can achieve this by uncommenting the host mount in the `deployment.yaml` file of `mediawiki-chart` and providing a host mount path.
+
+
+
+Additional Notes
+I Would have EnsureD proper security measures FOR SECRETS Such as DB passwd and all using some External provider using secret CSI driver but due to time constain keeping it simple.
+
