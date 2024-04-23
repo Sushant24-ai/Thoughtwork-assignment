@@ -43,9 +43,16 @@ spec:
           volumeMounts:
           - mountPath: /var/www/html/images
             name: {{ .Chart.Name }}-data
+          # - mountPath: /var/www/html
+          #   name: {{ .Chart.Name }}-phplocalsettings  
          
       volumes:
       - name: {{ .Chart.Name }}-data
         persistentVolumeClaim:
           claimName: {{ .Chart.Name }}-data
+
+      # - name: {{ .Chart.Name }}-phplocalsettings
+      #   hostpath:
+      #    path: /c/phplocalsettings/LocalSettings.php
+      #    type: file
       
